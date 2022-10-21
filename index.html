@@ -82,14 +82,14 @@
                 </li>
                 <li class="item-central">
                     <img src="./images/moto-bmw.png" alt="Moto BMW">
-                    <h3>Carro BMW</h3>
+                    <h3>Moto BMW</h3>
                     <p>Câmbio automático, 4 portas, vidros e travas elétricas</p>
                     <strong>R$ 75.000,00</strong>
                     <button>Tenho interesse</button>
                 </li>
                 <li>
                     <img src="./images/fusca.png" alt="Carro Fusca">
-                    <h3>Carro BMW</h3>
+                    <h3>Fusca</h3>
                     <p>Câmbio automático, 2 portas, vidros e travas elétricas</p>
                     <strong>R$ 75.000,00</strong>
                     <button>Tenho interesse</button>
@@ -137,7 +137,7 @@
                 </li>
                 <li>
                     <img src="./images/fusca.png" alt="Carro Fusca">
-                    <h3>Carro BMW</h3>
+                    <h3>Fusca</h3>
                     <p>Câmbio automático, 2 portas, vidros e travas elétricas</p>
                     <div class="price">
                         <del>R$ 100.000,00</del>
@@ -222,49 +222,7 @@
     <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/messages_pt_BR.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#carousel-imagens').slick({
-                autoplay: true,
-            });
-        })
-
-        $('.menu-hamburguer').click(function () {
-            $('nav').slideToggle();
-        })
-        $('#telefone').mask('(00) 00000-0000',{ 
-        placeholder:'(00) 00000-0000'});
-        $('form').validate({
-            rules: {
-                nome: {
-                    required: true
-                },
-                email: {
-                    required: true,
-                    email: true
-                },
-                telefone: {
-                    required: true
-                },
-                mensagem: {
-                    required: true
-                },
-                veiculo: {
-                    required: false
-                }
-            },
-            submitHandler: function (form) {
-                console.log(form)
-            },
-            invalidHandler: function(evento, validador) {
-                let camposIncorretos = validador.numberOfInvalids();
-                console.log(camposIncorretos);
-                if (camposIncorretos) {
-                    alert(`Existem ${camposIncorretos} campos incorretos`);
-                }
-            }
-        })
-    </script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
