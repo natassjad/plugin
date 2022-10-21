@@ -42,6 +42,11 @@ nav {
     display: none;
 }
 
+#sobre p {
+    text-align: justify;
+    margin: 5px;
+}
+
 nav li {
     list-style: none;
     display: inline;
@@ -123,7 +128,7 @@ button {
     border-radius: 6px;
 }
 
-.price {
+.price, strong {
     display: block;
     margin: 16px 0;
 }
