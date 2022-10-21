@@ -250,7 +250,17 @@
                     required: true
                 },
                 veiculo: {
-                    required: true
+                    required: false
+                }
+            },
+            submitHandler: function (form) {
+                console.log(form)
+            },
+            invalidHandler: function(evento, validador) {
+                let camposIncorretos = validador.numberOfInvalids();
+                console.log(camposIncorretos);
+                if (camposIncorretos) {
+                    alert(`Existem ${camposIncorretos} campos incorretos`);
                 }
             }
         })
